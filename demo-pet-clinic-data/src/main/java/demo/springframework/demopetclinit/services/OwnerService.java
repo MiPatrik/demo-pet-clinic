@@ -1,6 +1,6 @@
-package demopetclinic.services;
+package demo.springframework.demopetclinit.services;
 
-import demopetclinic.model.Owner;
+import demo.springframework.demopetclinit.model.Owner;
 
 public interface OwnerService extends CrudService<Owner, Long>{
 
