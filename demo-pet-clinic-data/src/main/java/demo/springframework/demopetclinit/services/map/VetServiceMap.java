@@ -1,6 +1,6 @@
 package demo.springframework.demopetclinit.services.map;
 
-import demo.springframework.demopetclinit.model.Speciality;
+import demo.springframework.demopetclinit.model.Specialty;
 import demo.springframework.demopetclinit.model.Vet;
 import demo.springframework.demopetclinit.services.SpecialtyService;
 import demo.springframework.demopetclinit.services.VetService;
@@ -28,7 +28,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long>  implements Vet
         if (object.getSpecialities().size() > 0){
             object.getSpecialities().forEach(speciality -> {
                 if(speciality.getId() == null){
-                    Speciality savedSpecialty = specialtyService.save(speciality);
+                    Specialty savedSpecialty = specialtyService.save(speciality);
                     speciality.setId(savedSpecialty.getId());
                 }
             });
