@@ -90,7 +90,8 @@
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>unit-jupiter-engine</artifactId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.4.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
